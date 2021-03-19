@@ -287,6 +287,10 @@ const ELEMENT_DATA: PeriodicElement[] = [
   templateUrl: "table-selection.html",
 })
 export class TableSelectionE implements AfterViewInit {
+
+
+
+  
   displayedColumns: string[] = [
     "select",   
     "Data",
@@ -297,6 +301,8 @@ export class TableSelectionE implements AfterViewInit {
     "Conta",
     "Lancamento",
   ];
+
+ 
   dataSource = new MatTableDataSource(ELEMENT_DATA);
   selection = new SelectionModel<PeriodicElement>(true, []);
 
@@ -309,6 +315,8 @@ export class TableSelectionE implements AfterViewInit {
     
     // Assign the data to the data source for the table to render
     this.dataSource = new MatTableDataSource(ELEMENT_DATA);
+
+    
   }
 
   ngAfterViewInit() {

@@ -1,8 +1,4 @@
-<div id="wrap">
-  <form action="" autocomplete="on">
-  <input  id="search"  name="search" type="text"  placeholder="Busca em todos os campos"><input id="search_submit" value="Rechercher" type="submit">
-  </form>
-</div>
+
 
 <!-- Search -->
 <mat-form-field>
@@ -63,7 +59,8 @@
     <!--  Column -->
     <ng-container matColumnDef="Valor">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Valor </th>
-      <td mat-cell *matCellDef="let element"> {{element.Valor}} </td>
+      <td mat-cell *matCellDef="let element"> {{element.Valor | currency}} </td>
+      
     </ng-container>
 
     <!--  Column -->
